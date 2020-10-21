@@ -224,7 +224,6 @@ var Botkit = {
                 that.trigger('socket_error', err);
                 return;
             }
-
             that.trigger(message.type, message);
         });
     },
@@ -383,7 +382,8 @@ var Botkit = {
             });
         });
 
-        that.on('sent', function () {
+        that.on('sent', function (e) {
+
             // do something after sending
         });
 

@@ -8,6 +8,7 @@ module.exports = function(controller) {
     // controller.hears('sample','message,direct_message', async(bot, message) => {
     //     await bot.reply(message, 'I heard a sample message.');
     // });
+    // controller.setTypingDelayFactor(2)
 
     controller.hears('Job History','message,direct_message', async(bot, message) => {
         await bot.reply(message, {
@@ -69,18 +70,18 @@ module.exports = function(controller) {
 
     controller.hears('Tech Stack', 'message,direct_message', async (bot, message) => {
         await bot.reply(message, {
-            text: "Eugene can use the following tools:",
+            text: "Eugene can use the following tools",
             quick_replies: [
                 {
                     title: 'JavaScript',
                     payload: 'JavaScript',
                 },
                 {
-                    title: 'Ruby',
+                    title: 'Ruby / Ruby on Rails',
                     payload: 'Ruby',
                 },
                 {
-                    title: 'Python',
+                    title: 'Python / Flask',
                     payload: 'Python',
                 },
             ]
