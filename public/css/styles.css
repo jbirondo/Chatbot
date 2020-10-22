@@ -247,7 +247,7 @@ a.button:hover {
 }
 #message_window .message.outgoing {
   float: right;
-  background: #a795ef;
+  background: #3300ff;
   color: white;
 }
 #message_window #message_replies {
@@ -255,8 +255,9 @@ a.button:hover {
   overflow-x: auto;
   flex-shrink: 0;
   -webkit-overflow-scrolling: touch;
-  /* Lets it scroll lazy */
+  background-color: darkgray;
 }
+
 #message_window #message_replies ul {
   list-style-type: none;
   margin: 0px auto;
@@ -266,19 +267,57 @@ a.button:hover {
   display: inline-block;
   margin: 0.5rem;
   margin-left: 0;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.9s 1;
+  animation: fadeIn 0.9s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 #message_window #message_replies a {
   text-decoration: none;
   display: block;
-  border: 1px solid #a795ef;
-  color: #a795ef;
+  border: 1px solid #3300ff;
+  color: #3300ff;
   border-radius: 16px;
   padding: 0.25rem 1rem;
   font-size: 14px;
   cursor: pointer;
 }
+#message_window #message_replies ul li:nth-child(1){
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+#message_window #message_replies ul li:nth-child(2){
+  -webkit-animation-delay: 1.0s;
+  animation-delay: 1.0s;
+}
+#message_window #message_replies ul li:nth-child(3){
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+#message_window #message_replies ul li:nth-child(4){
+  -webkit-animation-delay: 2.0s;
+  animation-delay: 2.0s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
 #message_window #message_replies a:hover {
-  background: #a795ef;
+  background: #3300ff;
   color: #FFF;
 }
 
@@ -343,3 +382,6 @@ a.button:hover {
 }
 
 /*# sourceMappingURL=styles.css.map */
+section {
+  background-color: darkgray;
+}
