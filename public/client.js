@@ -241,7 +241,6 @@ var Botkit = {
     },
     renderMessage: function (message) {
         var that = this;
-        console.log(message)
         if (!that.next_line) {
             that.next_line = document.createElement("div");
             that.message_list.appendChild(that.next_line);
