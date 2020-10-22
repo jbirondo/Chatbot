@@ -33,7 +33,10 @@ const controller = new Botkit({
 
     adapter: adapter,
 
-    storage
+    storage,
+    replyWithTyping: true,
+    studio_token: process.env.studio_token,
+    typingDelayFactor: 1.3
 });
 
 if (process.env.CMS_URI) {
