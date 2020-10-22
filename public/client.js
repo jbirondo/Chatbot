@@ -82,8 +82,6 @@ var Botkit = {
             user: this.guid,
             channel: this.options.use_sockets ? 'websocket' : 'webhook'
         });
-        console.log(text)
-        
         this.input.value = '';
 
         this.trigger('sent', message);
@@ -253,6 +251,7 @@ var Botkit = {
         if (!message.isTyping) {
             delete (that.next_line);
         }
+        console.log(message)
     },
     triggerScript: function (script, thread) {
         this.deliverMessage({
@@ -392,7 +391,6 @@ var Botkit = {
 
             console.log('RECEIVED MESSAGE', message);
             that.renderMessage(message);
-
         });
 
         that.on('message', function (message) {
@@ -478,7 +476,6 @@ var Botkit = {
             // this is a stand-alone client. connect immediately.
             that.connect(user);
         }
-
         return that;
     }
 };

@@ -167,6 +167,11 @@ $human_message_text: white;
       overflow-x: auto;
       flex-shrink: 0;
       -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+      opacity: 1;
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 20s;
 
       ul {
           list-style-type: none;
@@ -197,6 +202,14 @@ $human_message_text: white;
    }
 }
 
+@keyframes fadeInOpacity { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
 
 
 /* typing indicator CSS based on code by Joseph Fusco -> https://codepen.io/fusco/pen/XbpaYv */
