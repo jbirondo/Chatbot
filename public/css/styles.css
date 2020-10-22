@@ -5,11 +5,13 @@
 
 body,
 html {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  background-color: #FFF;
-  font-family: "helvetica", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: #FFF;
+    font-family: "helvetica", sans-serif;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/786/743/628/synthwave-city-evga-wallpaper-preview.jpg);
+    background-size: cover;
 }
 
 .wrapper {
@@ -53,7 +55,7 @@ footer {
 }
 
 a {
-  color: #a795ef;
+  color: blue;
 }
 
 .copyurl {
@@ -122,8 +124,6 @@ a.button:hover {
 /* chat client */
 #message_window {
   background: #FFFFFF;
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC;
   /*height: 500px;
   width: 320px;*/
   height: 100%;
@@ -179,21 +179,22 @@ a.button:hover {
   clear: both;
 }
 #message_window footer {
-  border-top: 1px solid #CCC;
-  padding: 0.25rem;
+  background-color: #b8aec8;
 }
 #message_window footer input[type=text] {
   flex-grow: 1;
   font-size: 1.25rem;
   outline: none;
   border: none;
+  color: #d30cb8;
+  background-color: #b8aec8;
 }
 #message_window footer button {
   width: 50px;
   background: none;
   border: 0;
   cursor: pointer;
-  color: blue;
+  color: #5c2c6d;
   font-weight: bold;
 }
 #message_window form {
@@ -207,8 +208,8 @@ a.button:hover {
 #message_window .message {
   font-size: 14px;
   padding: 0.5rem;
-  background: #F0F0F0;
-  color: #333;
+  background: 	#6df1d8;
+  color: black;
   border-radius: 5px;
   width: auto;
   display: inline-block;
@@ -247,7 +248,7 @@ a.button:hover {
 }
 #message_window .message.outgoing {
   float: right;
-  background: #3300ff;
+  background: #d30cb8;
   color: white;
 }
 #message_window #message_replies {
@@ -255,7 +256,7 @@ a.button:hover {
   overflow-x: auto;
   flex-shrink: 0;
   -webkit-overflow-scrolling: touch;
-  background-color: darkgray;
+  background-color: #3a3434;
 }
 
 #message_window #message_replies ul {
@@ -276,8 +277,8 @@ a.button:hover {
 #message_window #message_replies a {
   text-decoration: none;
   display: block;
-  border: 1px solid #3300ff;
-  color: #3300ff;
+  border: 1px solid #d30cb8;
+  color: #d30cb8;
   border-radius: 16px;
   padding: 0.25rem 1rem;
   font-size: 14px;
@@ -317,7 +318,7 @@ a.button:hover {
   }
 }
 #message_window #message_replies a:hover {
-  background: #3300ff;
+  background: #d30cb8;
   color: #FFF;
 }
 
@@ -383,5 +384,9 @@ a.button:hover {
 
 /*# sourceMappingURL=styles.css.map */
 section {
-  background-color: darkgray;
+  background-color: #3a3434;
+}
+
+::placeholder{
+  color: #d30cb8
 }

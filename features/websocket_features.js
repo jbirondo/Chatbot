@@ -1,16 +1,14 @@
-/**
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License.
- */
+
 module.exports = function(controller) {
 
     if (controller.adapter.name === 'Web Adapter') {
 
         console.log('Loading sample web features...');
 
-        controller.hears(new RegExp('quick'), 'message', async (bot, message) => {
+        controller.hears(['hi', 'hello', 'howdy', 'hey', 'aloha', 'hola', 'bonjour', 'oi', 'main menu', 'Main menu'], 'message', async (bot, message) => {
 
             await bot.reply(message,{
+
                 text: 'What do you want to know about Eugene?',
                 quick_replies: [
                     {
