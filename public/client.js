@@ -206,7 +206,6 @@ var Botkit = {
             that.trigger("disconnected", event);
             if (that.reconnect_count < that.config.max_reconnect) {
                 setTimeout(function () {
-                    console.log("RECONNECTING ATTEMPT ", ++that.reconnect_count);
                     that.connectWebsocket(that.config.ws_url);
                 }, that.config.reconnect_timeout);
             } else {
