@@ -284,7 +284,6 @@ var Botkit = {
                 break;
             case "identify":
                 // link this account info to this user
-                console.log("IDENTIFY", event.data.user);
                 Botkit.identifyUser(event.data.user);
                 break;
             case "connect":
