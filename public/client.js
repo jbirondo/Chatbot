@@ -291,7 +291,6 @@ var Botkit = {
                 Botkit.connect(event.data.user);
                 break;
             default:
-                console.log("UNKNOWN COMMAND", event.data);
         }
     },
     sendEvent: function (event) {
