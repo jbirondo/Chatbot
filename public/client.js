@@ -345,7 +345,6 @@ var Botkit = {
         );
     },
     boot: function (user) {
-        console.log("Booting up");
 
         var that = this;
 
