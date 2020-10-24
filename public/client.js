@@ -203,7 +203,6 @@ var Botkit = {
         });
 
         that.socket.addEventListener("close", function (event) {
-            console.log("SOCKET CLOSED!");
             that.trigger("disconnected", event);
             if (that.reconnect_count < that.config.max_reconnect) {
                 setTimeout(function () {
