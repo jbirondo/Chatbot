@@ -280,7 +280,6 @@ var Botkit = {
         switch (event.data.name) {
             case "trigger":
                 // tell Botkit to trigger a specific script/thread
-                console.log("TRIGGER", event.data.script, event.data.thread);
                 Botkit.triggerScript(event.data.script, event.data.thread);
                 break;
             case "identify":
