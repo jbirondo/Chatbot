@@ -464,7 +464,6 @@ var Botkit = {
             });
             console.log("Messenger booted in embedded mode");
         } else {
-            console.log("Messenger booted in stand-alone mode");
             // this is a stand-alone client. connect immediately.
             that.connect(user);
         }
