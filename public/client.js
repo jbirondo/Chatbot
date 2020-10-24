@@ -137,7 +137,6 @@ var Botkit = {
 
             user.timezone_offset = new Date().getTimezoneOffset();
             that.current_user = user;
-            console.log("CONNECT WITH USER", user);
         }
 
         // connect to the chat server!
