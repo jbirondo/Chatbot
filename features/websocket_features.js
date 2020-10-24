@@ -3,8 +3,6 @@ module.exports = function(controller) {
 
     if (controller.adapter.name === 'Web Adapter') {
 
-        console.log('Loading sample web features...');
-
         controller.hears(['hi', 'hello', 'howdy', 'hey', 'aloha', 'hola', 'bonjour', 'oi', 'main menu', 'Main menu'], 'message', async (bot, message) => {
 
             await bot.reply(message,{
