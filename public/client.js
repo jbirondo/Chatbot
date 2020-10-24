@@ -188,7 +188,6 @@ var Botkit = {
 
         // Connection opened
         that.socket.addEventListener("open", function (event) {
-            console.log("CONNECTED TO SOCKET");
             that.reconnect_count = 0;
             that.trigger("connected", event);
             that.deliverMessage({
