@@ -387,7 +387,6 @@ var Botkit = {
         });
 
         that.on("message", function (message) {
-            console.log("RECEIVED MESSAGE", message);
             that.renderMessage(message);
         });
 
