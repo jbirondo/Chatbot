@@ -475,8 +475,7 @@ var Botkit = {
     // the DOM will be available here
     Botkit.boot();
 
-    botkit = this.Botkit
-    botkit.renderMessage({
+    Botkit.renderMessage({
         type: "message", 
         text: "Welcome to Eugene's Synthwave Chatbot. Not only is the chatbot a synthwave color scheme, the chatbot utilizes JavaScript speech-'Synth'-esis, Try the voice command 'aloha' or say 'main menu' to toggle the Main Menu and feel free to say the quick replies to select them.", 
     })
